@@ -17,7 +17,7 @@ function max(arr) {
     return "Need an array as argument";
   }
   if (arr.length === 0) {
-    return "null"; // или null (без кавычек)
+    return null; // или null (без кавычек)
   }
   return Math.max(...arr);
 }
