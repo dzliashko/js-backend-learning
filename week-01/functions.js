@@ -1,9 +1,15 @@
 function sum(a, b) {
   if (typeof a === "number" && typeof b === "number") {
     return a + b;
-  } else {
-    return "Need two numbers as arguments";
   }
+  return "Need two numbers as arguments";
 }
 
-export { sum };
+function isEven(n) {
+  if (typeof n === "number") {
+    return n % 2 == 0;
+  }
+  return "Need a number as argument";
+}
+
+export { sum, isEven };
