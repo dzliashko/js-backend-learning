@@ -1,23 +1,23 @@
 function sum(a, b) {
-  if (typeof a === "number" && typeof b === "number") {
-    return a + b;
+  if (typeof a !== "number" || typeof b !== "number") {
+    return null;
   }
-  return "Need two numbers as arguments";
+  return a + b;
 }
 
 function isEven(n) {
-  if (typeof n === "number") {
-    return n % 2 == 0;
+  if (typeof n !== "number") {
+    return null;
   }
-  return "Need a number as argument";
+  return n % 2 === 0;
 }
 
 function max(arr) {
   if (!Array.isArray(arr)) {
-    return "Need an array as argument";
+    return null;
   }
   if (arr.length === 0) {
-    return null; // или null (без кавычек)
+    return null;
   }
   return Math.max(...arr);
 }
