@@ -68,3 +68,7 @@ function getStats(numbers) {
 - мутация входных массивов
 - console.log внутри функций
 - копипаста из StackOverflow
+
+## Start program
+
+node index.js
