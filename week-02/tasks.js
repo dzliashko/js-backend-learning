@@ -20,7 +20,7 @@ function getNames(users) {
 }
 
 function averageAge(users) {
-  if (!Array.isArray(users)) {
+  if (!Array.isArray(users) && users.length === 0) {
     return null
   }
   const totalAges = users.reduce((acc, user) => acc + user.age, 0)
